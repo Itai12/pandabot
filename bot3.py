@@ -11,7 +11,7 @@ async def on_ready():
     print('We have logged in as {0.user}'.format(client))
 @client.event
 async def on_message(message):
-	if "787710618038698034" in message.content:
+	if "<@!787710618038698034>" in message.content:
 		http = urllib3.PoolManager()
 		url = "https://some-random-api.ml/img/red_panda"
 		r = http.request('GET', url)
