@@ -7,7 +7,7 @@ client = commands.Bot(command_prefix = '!')
 client.remove_command("help")
 @client.event
 async def on_ready():
-    await client.change_presence(status=discord.Status.invisible, activity=discord.Game(name='mention me'))
+    await client.change_presence(status=discord.Status.idle, activity=discord.Game(name='mention me'))
     print('We have logged in as {0.user}'.format(client))
 @client.event
 async def on_message(message):
